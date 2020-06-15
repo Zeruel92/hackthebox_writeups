@@ -64,7 +64,7 @@ Nmap done: 1 IP address (1 host up) scanned in 434.17 seconds
 
 ## Enumerating RPC
 
-`rpcdump.py 10.10.10.172 -p 135 > rpcdump.log`
+`rpcdump.py 10.10.10.172 -p 135 > rpcdump.log` [rpcdump.log][4] 
 
 `rpcclient -W workgroup -c querydispinfo -U '' -N monteverde.htb`
 
@@ -125,5 +125,6 @@ Run [a.ps1][1]
 [1]: a.ps1
 [2]: nmap-ldap.txt
 [3]: azure.xml
+[4]: rpcdump.log 
 
 ![htbbadge](https://www.hackthebox.eu/badge/image/272787)
