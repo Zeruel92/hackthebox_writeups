@@ -124,6 +124,6 @@ Run [a.ps1][1]
 [#]://
 [1]: a.ps1
 [2]: nmap-ldap.txt
-[3]: azuere.xml
+[3]: azure.xml
 
 ![htbbadge](https://www.hackthebox.eu/badge/image/272787)
