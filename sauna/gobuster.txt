@@ -1,0 +1,7 @@
+/images (Status: 301)
+/Images (Status: 301)
+/css (Status: 301)
+/fonts (Status: 301)
+/IMAGES (Status: 301)
+/Fonts (Status: 301)
+/CSS (Status: 301)
