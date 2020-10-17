@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Fri Jun 12 20:02:34 2020 as: nmap -A -T5 -p- -o blunder.nmap blunder.htb
+Nmap scan report for blunder.htb (10.10.10.191)
+Host is up (0.26s latency).
+Skipping host blunder.htb (10.10.10.191) due to host timeout
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun 12 20:17:47 2020 -- 1 IP address (1 host up) scanned in 915.48 seconds

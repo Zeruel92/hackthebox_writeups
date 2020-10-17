@@ -1,0 +1,7 @@
+/about (Status: 200)
+/0 (Status: 200)
+/admin (Status: 301)
+/usb (Status: 200)
+/LICENSE (Status: 200)
+/server-status (Status: 403)
+/%3FRID%3D2671 (Status: 200)
