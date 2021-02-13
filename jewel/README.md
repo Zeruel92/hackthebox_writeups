@@ -25,7 +25,7 @@ Using [exploit][2] we can get the user flag from bill.
 
 Inside the bill's home there is a file `.google_authenticator` -> `2UQI3R52WFCLE6JTLDCSJYMJH4` 
 
-After a very long session john found a password for bill ***bill:spongebob*** that we can use for `sudo`
+After a very long session `hashcat` found a password for bill ***bill:spongebob*** that we can use for `sudo`
 
 sudo asks for a verifaction code so we need to add the code printed before on a mobile google_authenticator app and sync the time to get a valid code
 
