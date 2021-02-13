@@ -1,0 +1,33 @@
+# Nmap 7.91 scan initiated Thu Feb 11 14:40:56 2021 as: nmap -T3 -A -p- -o jewel.nmap 10.10.10.211
+Nmap scan report for jewel.htb (10.10.10.211)
+Host is up (0.053s latency).
+Not shown: 65532 filtered ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 fd:80:8b:0c:73:93:d6:30:dc:ec:83:55:7c:9f:5d:12 (RSA)
+|   256 61:99:05:76:54:07:92:ef:ee:34:cf:b7:3e:8a:05:c6 (ECDSA)
+|_  256 7c:6d:39:ca:e7:e8:9c:53:65:f7:e2:7e:c7:17:2d:c3 (ED25519)
+8000/tcp open  http    Apache httpd 2.4.38
+|_http-generator: gitweb/2.20.1 git/2.20.1
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-title: jewel.htb Git
+|_Requested resource was http://jewel.htb:8000/gitweb/
+8080/tcp open  http    nginx 1.14.2 (Phusion Passenger 6.0.6)
+|_http-server-header: nginx/1.14.2 + Phusion Passenger 6.0.6
+|_http-title: BL0G!
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.6 (92%), Linux 5.0 (92%), Linux 5.3 - 5.4 (91%), Crestron XPanel control system (90%), Linux 5.0 - 5.4 (90%), Linux 2.6.32 (90%), Linux 5.0 - 5.3 (89%), Linux 5.4 (89%), ASUS RT-N56U WAP (Linux 3.4) (87%), Linux 3.1 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT      ADDRESS
+1   51.40 ms 10.10.14.1
+2   51.53 ms jewel.htb (10.10.10.211)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 11 14:43:28 2021 -- 1 IP address (1 host up) scanned in 152.05 seconds
