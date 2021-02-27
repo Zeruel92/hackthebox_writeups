@@ -180,6 +180,7 @@ User mrb3n may run the following commands on academy:
 Escalate via [sudo + composer][3] give us the root 
 
 ![htbbadge](https://www.hackthebox.eu/badge/image/272787)
+![achievement](https://www.hackthebox.eu/storage/achievements/31eb8125f335c5928a941f3ea595514c.png)
 
 [//]: #links
 [1]: academy.nmap
