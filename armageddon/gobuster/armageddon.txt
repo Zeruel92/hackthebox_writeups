@@ -1,0 +1,7 @@
+/misc                 (Status: 301) [Size: 235] [--> http://armageddon.htb/misc/]
+/themes               (Status: 301) [Size: 237] [--> http://armageddon.htb/themes/]
+/modules              (Status: 301) [Size: 238] [--> http://armageddon.htb/modules/]
+/scripts              (Status: 301) [Size: 238] [--> http://armageddon.htb/scripts/]
+/sites                (Status: 301) [Size: 236] [--> http://armageddon.htb/sites/]
+/includes             (Status: 301) [Size: 239] [--> http://armageddon.htb/includes/]
+/profiles             (Status: 301) [Size: 239] [--> http://armageddon.htb/profiles/]

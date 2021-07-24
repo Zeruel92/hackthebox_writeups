@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Jun 26 18:26:16 2021 as: nmap -sV -p- -oA nmap/armageddon 10.10.10.233 -->
+<nmaprun scanner="nmap" args="nmap -sV -p- -oA nmap/armageddon 10.10.10.233" start="1624724776" startstr="Sat Jun 26 18:26:16 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1624724776" endtime="1624724815"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.233" addrtype="ipv4"/>
+<hostnames>
+<hostname name="armageddon.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) PHP/5.4.16" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service></port>
+</ports>
+<times srtt="54276" rttvar="688" to="100000"/>
+</host>
+<runstats><finished time="1624724815" timestr="Sat Jun 26 18:26:55 2021" summary="Nmap done at Sat Jun 26 18:26:55 2021; 1 IP address (1 host up) scanned in 39.45 seconds" elapsed="39.45" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
