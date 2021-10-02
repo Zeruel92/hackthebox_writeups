@@ -1,0 +1,10 @@
+# Nmap 7.91 scan initiated Sat Jun 26 18:26:16 2021 as: nmap -sV -p- -oA nmap/armageddon 10.10.10.233
+Nmap scan report for armageddon.htb (10.10.10.233)
+Host is up (0.054s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.4 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jun 26 18:26:55 2021 -- 1 IP address (1 host up) scanned in 39.45 seconds

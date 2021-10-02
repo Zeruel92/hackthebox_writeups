@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Feb 18 22:14:01 2021 as: nmap -sV -sC -oA nmap/ophiuchi ophiuchi.htb
+Host: 10.10.10.227 (ophiuchi.htb)	Status: Up
+Host: 10.10.10.227 (ophiuchi.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 8080/open/tcp//http//Apache Tomcat 9.0.38/	Ignored State: closed (998)
+# Nmap done at Thu Feb 18 22:14:11 2021 -- 1 IP address (1 host up) scanned in 10.43 seconds

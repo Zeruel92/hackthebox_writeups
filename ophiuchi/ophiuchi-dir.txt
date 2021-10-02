@@ -1,0 +1,3 @@
+/test (Status: 302)
+/manager (Status: 302)
+/yaml (Status: 302)
