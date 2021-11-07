@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Jun 28 10:11:48 2021 as: nmap -sV -sC -p- -oA nmap/explore explore.htb -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -p- -oA nmap/explore explore.htb" start="1624867908" startstr="Mon Jun 28 10:11:48 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.174.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="explore.htb" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1624867909" endtime="1624868035"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.129.174.21" addrtype="ipv4"/>
+<hostnames>
+<hostname name="explore.htb" type="user"/>
+<hostname name="explore.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port2222-TCP:V=7.91%I=7%D=6/28%Time=60D98464%P=x86_64-pc-linux-gnu%r(NULL,24,&quot;SSH-2\.0-SSH\x20Server\x20-\x20Banana\x20Studio\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-SSH Server - Banana Studio"><elem key="NULL">&#xa;    SSH-2.0-SSH Server - Banana Studio</elem>
+</script><script id="ssh-hostkey" output="&#xa;  2048 71:90:e3:a7:c9:5d:83:66:34:88:3d:eb:b4:c7:88:fb (RSA)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCqK2WZkEVE0CPTPpWoyDKZkHVrmffyDgcNNVK3PkamKs3M8tyqeFBivz4o8i9Ai8UlrVZ8mztI3qb+cHCdLMDpaO0ghf/50qYVGH4gU5vuVN0tbBJAR67ot4U+7WCcdh4sZHX5NNatyE36wpKj9t7n2XpEmIYda4CEIeUOy2Mm3Es+GD0AAUl8xG4uMYd2rdrJrrO1p15PO97/1ebsTH6SgFz3qjZvSirpom62WmmMbfRvJtNFiNJRydDpJvag2urk16GM9a0buF4h1JCGwMHxpSY05aKQLo8shdb9SxJRa9lMu3g2zgiDAmBCoKjsiPnuyWW+8G7Vz7X6nJC87KpL</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">7190e3a7c95d836634883debb4c788fb</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="5555"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45799"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="unknown" servicefp="SF-Port45799-TCP:V=7.91%I=7%D=6/28%Time=60D98463%P=x86_64-pc-linux-gnu%r(GenericLines,AA,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:19\x20GMT\r\nContent-Length:\x2022\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nInvalid\x20request\x20line:\x20&quot;)%r(GetRequest,5C,&quot;HTTP/1\.1\x20412\x20Precondition\x20Failed\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:19\x20GMT\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,B5,&quot;HTTP/1\.0\x20501\x20Not\x20Implemented\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:24\x20GMT\r\nContent-Length:\x2029\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nMethod\x20not\x20supported:\x20OPTIONS&quot;)%r(RTSPRequest,BB,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:24\x20GMT\r\nContent-Length:\x2039\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nNot\x20a\x20valid\x20protocol\x20version:\x20\x20RTSP/1\.0&quot;)%r(Help,AE,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:39\x20GMT\r\nContent-Length:\x2026\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nInvalid\x20request\x20line:\x20HELP&quot;)%r(SSLSessionReq,DD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:39\x20GMT\r\nContent-Length:\x2073\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nInvalid\x20request\x20line:\x20\x16\x03\0\0S\x01\0\0O\x03\0\?G\?\?\?,\?\?\?`~\?\0\?\?{\?\?\?\?w\?\?\?\?&lt;=\?o\?\x10n\0\0\(\0\x16\0\x13\0&quot;)%r(TerminalServerCookie,CA,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:39\x20GMT\r\nContent-Length:\x2054\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nInvalid\x20request\x20line:\x20\x03\0\0\*%\?\0\0\0\0\0Cookie:\x20mstshash=nmap&quot;)%r(TLSSessionReq,DB,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2028\x20Jun\x202021\x2008:12:39\x20GMT\r\nContent-Length:\x2071\r\nContent-Type:\x20text/plain;\x20charset=US-ASCII\r\nConnection:\x20Close\r\n\r\nInvalid\x20request\x20line:\x20\x16\x03\0\0i\x01\0\0e\x03\x03U\x1c\?\?random1random2random3random4\0\0\x0c\0/\0&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:19 GMT&#xa;    Content-Length: 22&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line:&#xa;  GetRequest: &#xa;    HTTP/1.1 412 Precondition Failed&#xa;    Date: Mon, 28 Jun 2021 08:12:19 GMT&#xa;    Content-Length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.0 501 Not Implemented&#xa;    Date: Mon, 28 Jun 2021 08:12:24 GMT&#xa;    Content-Length: 29&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Method not supported: OPTIONS&#xa;  Help: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 26&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: HELP&#xa;  RTSPRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:24 GMT&#xa;    Content-Length: 39&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    valid protocol version: RTSP/1.0&#xa;  SSLSessionReq: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 73&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    ?G???,???`~?&#xa;    ??{????w????&lt;=?o?&#xa;  TLSSessionReq: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 71&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    ??random1random2random3random4&#xa;  TerminalServerCookie: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 54&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    Cookie: mstshash=nmap"><elem key="GenericLines">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:19 GMT&#xa;    Content-Length: 22&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line:</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 412 Precondition Failed&#xa;    Date: Mon, 28 Jun 2021 08:12:19 GMT&#xa;    Content-Length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 501 Not Implemented&#xa;    Date: Mon, 28 Jun 2021 08:12:24 GMT&#xa;    Content-Length: 29&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Method not supported: OPTIONS</elem>
+<elem key="Help">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 26&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: HELP</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:24 GMT&#xa;    Content-Length: 39&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    valid protocol version: RTSP/1.0</elem>
+<elem key="SSLSessionReq">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 73&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    ?G???,???`~?&#xa;    ??{????w????&lt;=?o?</elem>
+<elem key="TLSSessionReq">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 71&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    ??random1random2random3random4</elem>
+<elem key="TerminalServerCookie">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Date: Mon, 28 Jun 2021 08:12:39 GMT&#xa;    Content-Length: 54&#xa;    Content-Type: text/plain; charset=US-ASCII&#xa;    Connection: Close&#xa;    Invalid request line: &#xa;    Cookie: mstshash=nmap</elem>
+</script></port>
+<port protocol="tcp" portid="59777"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Bukkit JSONAPI httpd for Minecraft game server" version="3.6.0 or older" method="probed" conf="10"/><script id="http-title" output="Site doesn&apos;t have a title (text/plain)."></script></port>
+</ports>
+<times srtt="48035" rttvar="692" to="100000"/>
+</host>
+<runstats><finished time="1624868035" timestr="Mon Jun 28 10:13:55 2021" summary="Nmap done at Mon Jun 28 10:13:55 2021; 1 IP address (1 host up) scanned in 126.63 seconds" elapsed="126.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
