@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Jul  1 16:58:59 2021 as: nmap -sC -sV -p- -oA nmap/cap cap.htb
+Host: 10.10.10.245 (cap.htb)	Status: Up
+Host: 10.10.10.245 (cap.htb)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//gunicorn/	Ignored State: closed (65532)
+# Nmap done at Thu Jul  1 17:01:34 2021 -- 1 IP address (1 host up) scanned in 154.59 seconds
